@@ -71,7 +71,7 @@ const MainApp = () => {
     return (
         <SafeAreaView style={styles.container}>
             <AppHeader/>
-            <Search />
+            <Search dispatch={dispatch}/>
             <ItemsList
                 items={[
                     ...categories,
