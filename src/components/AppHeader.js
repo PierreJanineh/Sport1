@@ -1,5 +1,6 @@
 import React from 'react';
 import {Image, Platform, StyleSheet, View} from 'react-native';
+import * as Colors from "../constants/colors";
 
 const AppHeader = (props) => {
     return (
@@ -12,14 +13,14 @@ const AppHeader = (props) => {
             <View style={styles.favBtnContainer}>
                 <Image
                     style={styles.favPersonIcon}
-                    source={require('../assets/favPerson.png')}
+                    source={require('../../assets/favPerson.png')}
                     resizeMode='cover'
                 />
             </View>
             <View style={styles.logoContainer}>
                 <Image
                     style={styles.logoImg}
-                    source={require('../assets/sport1Svg.png')}
+                    source={require('../../assets/sport1Svg.png')}
                     resizeMode='cover'
                 />
             </View>
@@ -34,10 +35,10 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     header: {
-        backgroundColor: '#141414',
+        backgroundColor: Colors.APP_BAR_COLOR,
     },
     favBtnContainer: {
         width: '100%',
