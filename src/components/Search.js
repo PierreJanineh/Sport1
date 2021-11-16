@@ -33,13 +33,12 @@ const Search = (props) => {
 const styles = StyleSheet.create({
     container: {
         height: 45,
-        flexDirection: 'row',
+        flexDirection: 'row-reverse',
         backgroundColor: 'white',
         margin: 15,
         borderRadius: 10,
         alignItems: 'center',
         justifyContent: 'flex-start',
-        direction: 'rtl',
         borderWidth: 0.2,
         borderColor: 'grey',
     },
@@ -49,6 +48,7 @@ const styles = StyleSheet.create({
     },
     input: {
         writingDirection: 'rtl',
+        textAlign: 'right',
         height: 45,
     }
 });

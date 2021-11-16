@@ -20,12 +20,9 @@ export const getCategories = () => {
 };
 
 export const filterCategories = () => {
-    console.log("hey");
     const searchText = (categories, searchTxt) => {
         const text = searchTxt.toLowerCase();
-        console.log("Filter");
-        console.log(categories);
-        console.log(searchTxt);
+
         return categories.filter((item) => {
             return item.title.toLowerCase().includes(text);
         })
